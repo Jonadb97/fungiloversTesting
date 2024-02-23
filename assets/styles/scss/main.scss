@@ -526,10 +526,16 @@ header {
 
   }
 
-  .glide__slide {
-    opacity: 0.2;
-    animation: 0.2s ease-in-out;
+
+  .glide2 {
+    .glide__slides {
+      .glide__slide {
+        opacity: 0.2;
+        animation: 0.2s ease-in-out;
+      }
+    }
   }
+
 
   .glide__slide--active {
     transform: scale(1);
