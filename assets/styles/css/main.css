@@ -596,4 +596,15 @@ footer sub {
   animation: 0.2s ease-in-out;
 }
 
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .selector .glide__slide {
+    margin: auto;
+  }
+}
+@media \\0 screen {
+  .glide__slide {
+    margin: auto;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

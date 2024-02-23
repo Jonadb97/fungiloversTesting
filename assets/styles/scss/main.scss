@@ -537,3 +537,15 @@ header {
     z-index: 4;
     animation: 0.2s ease-in-out;
   }
+
+  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { .selector {
+    .glide__slide {
+      margin: auto;
+    }
+  } }
+
+  @media \\0 screen {
+    .glide__slide {
+      margin: auto;
+    }
+  }
