@@ -14,13 +14,13 @@
 
     <header>
         <ul class="nav">
-            <li><a class="nav-link" href="#">INICIO</a></li>
-            <li><a class="nav-link" href="#">PRODUCTOS</a></li>
-            <li><a class="nav-link" href="#">ACERCA DE NOSOTROS</a></li>
+            <li><a class="nav-link" href="/inicio">INICIO</a></li>
+            <li><a class="nav-link" href="/productos">PRODUCTOS</a></li>
+            <li><a class="nav-link" href="/acerca">ACERCA DE NOSOTROS</a></li>
             <li><a class="nav-link" href="#">TIENDA</a></li>
             <li><a class="nav-link" href="#">FAQs</a></li>
             <li><a class="nav-link" href="#">NUESTROS HONGOS</a></li>
-            <li><a class="nav-link" href="#">CONTACTANOS</a></li>
+            <li><a class="nav-link" href="/contacto">CONTACTANOS</a></li>
         </ul>
 
     </header>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="main-container">
-        <div class="landing">
+        <div id="inicio" class="landing">
 
             <div class="glide" id="slider-landing">
                 <div class="glide__track" data-glide-el="track">
@@ -48,7 +48,7 @@
 
         </div>
 
-        <div class="acerca-de">
+        <div id="acerca" class="acerca-de">
             <img src="assets/img/fungilovers.svg" alt="">
             <div class="acerca-de-descripcion">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
@@ -76,7 +76,7 @@
 
         </div>
 
-        <div class="productos">
+        <div id="productos" class="productos">
             <h1>PRODUCTOS</h1>
             <div class="img-productos">
                 <button id="producto1" class="producto1">
@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <div class="testimonios">
+        <div id="testimonios" class="testimonios">
             <h1>TESTIMONIOS</h1>
             <div class="glide2">
                 <div class="glide__track" data-glide-el="track">
@@ -154,7 +154,7 @@
 
         </div>
 
-        <div class="asesoramiento-personalizado">
+        <div id="contacto" class="asesoramiento-personalizado">
             <div class="title">
                 <h1>ASESORAMIENTO</h1>
                 <h1> PERSONALIZADO</h1>
@@ -203,7 +203,7 @@
         new Glide('.glide2', {
             type: 'carousel',
             startAt: 0,
-            perView: 1,
+            perView: 3,
             animationDuration: 500
         }).mount()
 
