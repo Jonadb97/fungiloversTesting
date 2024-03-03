@@ -25,15 +25,20 @@ header {
 
 }
 
-.nav {
-
-  height: 5vh;
+.navegador {
+  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
 
   li {
     list-style-type: none;
+  }
+
+  .input-group {
+    padding: 0;
+    margin: 0;
   }
 
   li > a {
@@ -96,7 +101,7 @@ header {
 
 .carousel-landing {
   width: 100vw;
-  height: 86dvh;
+  height: 70dvh;
   object-fit: cover;
 }
 

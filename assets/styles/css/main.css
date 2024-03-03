@@ -146,41 +146,46 @@ header {
   display: flex;
 }
 
-.nav {
-  height: 5vh;
+.navegador {
+  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
   margin: auto;
   padding: 2rem 0 2rem 0;
   display: inline-flex;
   flex-direction: row;
   gap: 2rem;
 }
-.nav li {
+.navegador li {
   list-style-type: none;
 }
-.nav li > a {
+.navegador .input-group {
+  padding: 0;
+  margin: 0;
+}
+.navegador li > a {
   text-decoration: none;
   font-family: "Livvic";
   font-weight: bold;
   color: #1a1a1a;
   animation-duration: 0.2s;
 }
-.nav .nav-link {
+.navegador .nav-link {
   color: #1a1a1a;
   animation-duration: 0.2s;
 }
-.nav .nav-link:hover {
+.navegador .nav-link:hover {
   color: #f9f9f9;
   -webkit-text-stroke: 1px #1a1a1a;
   animation-duration: 0.2s;
 }
-.nav .nav-link:hover:before {
+.navegador .nav-link:hover:before {
   content: "*";
   padding-right: 0.5rem;
 }
-.nav .nav-link:hover:after {
+.navegador .nav-link:hover:after {
   content: "*";
   padding-left: 0.5rem;
 }
@@ -207,7 +212,7 @@ header {
 
 .carousel-landing {
   width: 100vw;
-  height: 86dvh;
+  height: 70dvh;
   object-fit: cover;
 }
 
@@ -584,7 +589,7 @@ footer sub {
   color: rgba(26, 26, 26, 0.548);
 }
 
-.glide__slide {
+.glide2 .glide__slides .glide__slide {
   opacity: 0.2;
   animation: 0.2s ease-in-out;
 }
