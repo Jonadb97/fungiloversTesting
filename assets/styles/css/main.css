@@ -356,7 +356,7 @@ header {
 }
 
 .extracto:hover {
-  background-image: url("assets/img/card2difuminado.jpeg");
+  background-image: url("../../../assets/img/card2difuminado.jpeg");
 }
 .extracto:hover p {
   display: flex;
@@ -606,9 +606,8 @@ h1:nth-child(2) {
   animation: 0.2s ease-in-out;
 }
 .footer-pagina .rrss:hover {
-  width: 6vw;
+  transform: scale(1.2);
   height: 6vw;
-  animation: 0.2s ease-in-out;
 }
 .footer-pagina sub {
   font-family: "Menulis";

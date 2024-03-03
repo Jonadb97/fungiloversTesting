@@ -257,7 +257,7 @@ header {
 }
 
 .extracto:hover {
-  background-image: url('assets/img/card2difuminado.jpeg'); 
+  background-image: url('../../../assets/img/card2difuminado.jpeg'); 
 
   p {
     display:flex;
@@ -556,9 +556,9 @@ header {
     }
 
     .rrss:hover {
-      width: 6vw;
+      transform: scale(1.2);
       height: 6vw;
-      animation: 0.2s ease-in-out;
+
     }
     
     sub {
