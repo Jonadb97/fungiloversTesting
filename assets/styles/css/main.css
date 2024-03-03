@@ -332,14 +332,14 @@ header {
 }
 
 .polvos {
-  background-image: url("assets/img/card3.jpeg");
+  background-image: url("../../../assets/img/card3.jpeg");
 }
 .polvos p {
   display: none;
 }
 
 .polvos:hover {
-  background-image: url("assets/img/card3difuminado.jpeg");
+  background-image: url("../../../assets/img/card3difuminado.jpeg");
 }
 .polvos:hover p {
   display: flex;
@@ -349,7 +349,7 @@ header {
 }
 
 .extracto {
-  background-image: url("assets/img/card2.jpeg");
+  background-image: url("../../../assets/img/card2.jpeg");
 }
 .extracto p {
   display: none;
@@ -366,14 +366,14 @@ header {
 }
 
 .micelio {
-  background-image: url("assets/img/card1.jpeg");
+  background-image: url("../../../assets/img/card1.jpeg");
 }
 .micelio p {
   display: none;
 }
 
 .micelio:hover {
-  background-image: url("assets/img/card1difuminado.jpeg");
+  background-image: url("../../../assets/img/card1difuminado.jpeg");
 }
 .micelio:hover p {
   display: flex;
@@ -410,7 +410,7 @@ header {
   gap: 2rem;
 }
 .testimonios .glide2 .glide__slides .glide__slide {
-  background-image: url("../../assets/img/cardtestimonios.svg");
+  background-image: url("../../../assets/img/cardtestimonios.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 500px;
