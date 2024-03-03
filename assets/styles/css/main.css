@@ -175,11 +175,15 @@ header {
 .navegador .nav-link {
   color: #1a1a1a;
   animation-duration: 0.2s;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .navegador .nav-link:hover {
   color: #f9f9f9;
   -webkit-text-stroke: 1px #1a1a1a;
   animation-duration: 0.2s;
+  padding-left: 0;
+  padding-right: 0;
 }
 .navegador .nav-link:hover:before {
   content: "*";
@@ -201,7 +205,7 @@ header {
 }
 
 .glide__slide {
-  width: 100vw;
+  width: 110vw;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -212,7 +216,7 @@ header {
 
 .carousel-landing {
   width: 100vw;
-  height: 70dvh;
+  height: 60dvh;
   object-fit: cover;
 }
 
@@ -232,24 +236,27 @@ header {
 }
 
 .acerca-de {
-  height: 100vh;
+  height: 140vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;
-  padding-top: 5rem;
+}
+.acerca-de img {
+  padding-bottom: 6rem;
 }
 
 .acerca-de-descripcion {
   margin: auto;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-direction: row;
+  padding-top: 5rem;
 }
 .acerca-de-descripcion p {
   font-family: "Menulis";
-  width: 50vw;
+  width: 40vw;
   margin-right: 5rem;
 }
 
@@ -259,42 +266,120 @@ header {
   padding-top: 1rem;
 }
 
-.outline1 {
-  position: absolute;
-  border: 1px solid black;
-  width: 15vw;
-  right: 17vw;
-  transform: translateY(2rem);
-  z-index: 1;
-  height: 25vw;
-}
-
-.outline2 {
-  position: absolute;
-  border: 1px solid black;
-  width: 15vw;
-  right: 12vw;
-  transform: translateY(-2rem);
-  z-index: 1;
-  height: 25vw;
-}
-
 .img-acerca {
-  width: 15vw;
+  width: 40vw;
   z-index: 2;
 }
 
+.descripcion-acerca {
+  padding-left: 2rem;
+  border-left: 1px solid #1a1a1a;
+}
+.descripcion-acerca h2 {
+  padding-bottom: 2rem;
+  font-family: "Livvic";
+}
+
 .productos {
-  height: 100vh;
+  height: 115vh;
   width: 100vw;
   background-color: #1a1a1a;
   color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .productos h1 {
   font-family: "Livvic";
   font-weight: bolder;
   text-align: center;
   padding-top: 2rem;
+  margin-bottom: 6rem;
+}
+.productos .productos-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.header-card {
+  background-color: #f9f9f9;
+  color: transparent;
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Livvic";
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  padding: 0.5rem;
+}
+
+.card-description {
+  height: 350px;
+  width: 20rem;
+  display: flex;
+  cursor: pointer;
+}
+.card-description p {
+  margin: auto;
+}
+
+.polvos {
+  background-image: url("/assets/img/card3.jpeg");
+}
+.polvos p {
+  display: none;
+}
+
+.polvos:hover {
+  background-image: url("/assets/img/card3difuminado.jpeg");
+}
+.polvos:hover p {
+  display: flex;
+  background-color: rgba(26, 26, 26, 0.93);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.extracto {
+  background-image: url("/assets/img/card2.jpeg");
+}
+.extracto p {
+  display: none;
+}
+
+.extracto:hover {
+  background-image: url("/assets/img/card2difuminado.jpeg");
+}
+.extracto:hover p {
+  display: flex;
+  background-color: rgba(26, 26, 26, 0.93);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.micelio {
+  background-image: url("/assets/img/card1.jpeg");
+}
+.micelio p {
+  display: none;
+}
+
+.micelio:hover {
+  background-image: url("/assets/img/card1difuminado.jpeg");
+}
+.micelio:hover p {
+  display: flex;
+  background-color: rgba(26, 26, 26, 0.93);
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .img-productos {
@@ -303,115 +388,6 @@ header {
   padding-top: 4rem;
   margin: auto;
   gap: 10vw;
-}
-.producto1 {
-  border-radius: 100%;
-  background-image: url("../../../assets/img/Screenshot_2024-02-17-11-12-10-051-edit_com.instagram.android.jpg");
-  width: 26vw;
-  height: 26vw;
-  position: relative;
-  background-size: cover;
-}
-
-.producto2 {
-  border-radius: 100%;
-  background-image: url("../../../assets/img/Screenshot_2024-02-17-11-13-24-397-edit_com.instagram.android.jpg");
-  background-size: cover;
-  width: 26vw;
-  height: 26vw;
-  position: relative;
-  background-size: cover;
-}
-
-.producto1 {
-  transition: 0.2s;
-  border: 0;
-  box-shadow: 0px 0px 30px black;
-}
-.producto1 p {
-  /* (C1) OVERLAY TEXT BOX */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #f9f9f9;
-  font-family: "Livvic";
-  font-weight: 600;
-  text-shadow: 0px 0px 5px black;
-  background-color: transparent;
-  /* (C2) CENTER TEXT */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-
-.producto1:hover {
-  transform: scale(1.2);
-  background-color: #1a1a1a;
-  box-shadow: 0px 0px 60px black;
-  cursor: pointer;
-}
-.producto1:hover p {
-  background-color: rgba(26, 26, 26, 0.668);
-  border-radius: 100%;
-  transition: 0.2s;
-  transform: translateY(-0.9rem);
-  opacity: 1;
-}
-
-.producto2 {
-  transition: 0.2s;
-  border: 0;
-  box-shadow: 0px 0px 60px black;
-}
-.producto2 p {
-  /* (C1) OVERLAY TEXT BOX */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #f9f9f9;
-  font-family: "Livvic";
-  font-weight: 600;
-  text-shadow: 0px 0px 5px black;
-  background-color: transparent;
-  /* (C2) CENTER TEXT */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-
-.producto2:hover {
-  transform: scale(1.2);
-  background-color: #1a1a1a;
-  box-shadow: 0px 0px 30px black;
-  cursor: pointer;
-}
-.producto2:hover p {
-  background-color: rgba(26, 26, 26, 0.668);
-  border-radius: 100%;
-  transition: 0.2s;
-  transform: translateY(-0.9rem);
-  opacity: 1;
-}
-
-.clase-visible {
-  opacity: 1;
-}
-.clase-visible .desc-producto {
-  opacity: 0;
-}
-
-.clase-descripcion {
-  opacity: 0.5;
-}
-.clase-descripcion .desc-producto p {
-  background-color: black;
-  border-radius: 100%;
 }
 
 .testimonios {
@@ -425,11 +401,23 @@ header {
   -webkit-text-stroke: 2px #1a1a1a;
   font-weight: bolder;
   padding-top: 2rem;
+  margin-bottom: 4rem;
 }
 .testimonios .glide2 .glide__slides {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+.testimonios .glide2 .glide__slides .glide__slide {
+  background-image: url("/assets/img/cardtestimonios.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  opacity: 0.2;
+  transition: 0.5s ease-in-out;
 }
 .testimonios .glide2 div {
   width: 100vw;
@@ -441,15 +429,38 @@ header {
   padding-top: 10vh;
   width: 30vw;
 }
+.testimonios .glide2 div > ul > li {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
 .testimonios .glide2 div > ul > li > p {
-  width: 30vw;
-  height: min-content;
-  background-color: #1a1a1a;
-  color: #f9f9f9;
-  padding: 2rem;
-  border: 15px solid white;
-  border-style: double;
-  box-shadow: 0px 0px 30px rgba(26, 26, 26, 0.498);
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  width: 320px;
+  margin: auto;
+  transform: translateY(-2rem);
+  font-family: "Menulis";
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.testimonios .glide2 div > ul > li > p sub {
+  text-align: center;
+  transform: translateY(-1rem);
+}
+.testimonios .glide2 div > ul > li > h6 {
+  font-family: "Livvic";
+  font-weight: bold;
+  transform: translateY(-2rem);
+}
+
+.glide__slide--active {
+  opacity: 1 !important;
 }
 
 .controls {
@@ -478,7 +489,7 @@ header {
 
 .asesoramiento-personalizado {
   width: 100vw;
-  height: 60vh;
+  height: 120vh;
   background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
@@ -488,7 +499,7 @@ header {
   padding-left: 10vw;
   padding-right: 10vw;
   font-family: "Menulis";
-  margin-bottom: 6rem;
+  margin-bottom: auto;
   text-align: center;
 }
 
@@ -506,8 +517,10 @@ h1:nth-child(2) {
 .title {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 .cta-btn {
@@ -515,7 +528,7 @@ h1:nth-child(2) {
   width: 20vh;
   height: 5vh;
   font-weight: 600;
-  transform: translateY(-3vw);
+  transform: translateY(3vw);
   cursor: pointer;
   display: flex;
   justify-content: space-around;
@@ -526,6 +539,21 @@ h1:nth-child(2) {
 .cta-btn img {
   height: 24px;
   width: 24px;
+}
+
+.img-contacto {
+  width: 300px;
+  margin-left: 10rem;
+}
+
+.contacto-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto-desc p {
+  margin-right: 10rem;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 730px) {
@@ -560,7 +588,7 @@ h1:nth-child(2) {
     transform: translateX(32vw);
   }
 }
-footer {
+.footer-pagina {
   display: inline-flex;
   width: 100vw;
   height: 40vh;
@@ -568,29 +596,26 @@ footer {
   align-items: center;
   gap: 8rem;
 }
-footer .logo-footer {
+.footer-pagina .logo-footer {
   width: 10vw;
   height: 10vw;
 }
-footer .rrss {
+.footer-pagina .rrss {
   width: 5vw;
   height: 5vw;
   animation: 0.2s ease-in-out;
 }
-footer .rrss:hover {
+.footer-pagina .rrss:hover {
   width: 6vw;
   height: 6vw;
   animation: 0.2s ease-in-out;
 }
-footer sub {
-  position: absolute;
-  transform: translateY(6rem);
+.footer-pagina sub {
   font-family: "Menulis";
   color: rgba(26, 26, 26, 0.548);
 }
 
 .glide2 .glide__slides .glide__slide {
-  opacity: 0.2;
   animation: 0.2s ease-in-out;
 }
 
